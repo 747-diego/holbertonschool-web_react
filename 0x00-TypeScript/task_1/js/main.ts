@@ -8,5 +8,6 @@ export interface Teacher {
 }
 
 export interface Directors extends Teacher{
-    numerOfReports: number;
+    numberOfReports: number;
 }
+
