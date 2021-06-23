@@ -2,7 +2,7 @@
 
 import { RowID } from './interface';
 import { RowElement } from './interface';
-import * as CRUD from './crud';
+import * as CRUD from './crud.js';
 
 const row: RowElement = {
 	firstName: 'Guilaume',
