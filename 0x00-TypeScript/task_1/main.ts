@@ -6,13 +6,3 @@ export interface Teacher {
     location: string;
     [propName: string]: any;
 }
-
-const teacher3: Teacher = {
-    firstName: 'Diego',
-    fullTimeEmployee: false,
-    lastName: 'Tardio',
-    location: 'Stamford',
-    contract: false
-};
-
-console.log(teacher3);
