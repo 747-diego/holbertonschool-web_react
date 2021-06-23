@@ -9,7 +9,7 @@ namespace Subjects {
             return (requirements);
         }
 
-        getAvailableTeacher(): sring {
+        getAvailableTeacher(): string {
             if (this.teacher.experienceTeachingC > 0) {
                 const available = `Available Teacher: ${this.teacher.firstName}`
                 return (available);
