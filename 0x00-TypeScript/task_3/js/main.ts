@@ -5,7 +5,7 @@ import { RowElement } from './interface.ts';
 import * as CRUD from './crud.js';
 
 const row: RowElement = {
-	firstName: 'Guilaume',
+	firstName: 'Guillaume',
 	lastName: 'Salva'
 }
 
