@@ -11,9 +11,15 @@ interface TeacherInterface {
 }
 
 export class Director implements DirectorInterface {
-	workFromHome() { return 'Working from home'; }
-	getCoffeeBreak() { return 'Getting a coffee break'; }
-	workDirectorTasks() { return 'Getting to director tasks'; }
+	workFromHome() { 
+        return ('Working from home'); 
+    }
+	getCoffeeBreak() { 
+        return ('Getting a coffee break'); 
+    }
+	workDirectorTasks() { 
+        return ('Getting to director tasks'); 
+    }
 }
 
 export class Teacher implements TeacherInterface {
