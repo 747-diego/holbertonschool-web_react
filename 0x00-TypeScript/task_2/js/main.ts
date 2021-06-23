@@ -12,7 +12,8 @@ interface TeacherInterface {
 
 export class Director implements DirectorInterface {
 	workFromHome() { 
-        return ('Working from home'); 
+        const home = 'Working from home';
+        return (home); 
     }
 	getCoffeeBreak() { 
         return ('Getting a coffee break'); 
