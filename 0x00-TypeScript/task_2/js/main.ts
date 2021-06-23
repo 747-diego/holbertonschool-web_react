@@ -11,7 +11,7 @@ interface TeacherInterface {
 }
 
 class Director implements DirectorInterface {
-	workFromHome() { const test = 'Working from home'; return (test); }
+	workFromHome() { return ('Working from home'); }
 	getCoffeeBreak() { return ('Getting a coffee break'); }
 	workDirectorTasks() { return ('Getting to director tasks'); }
 }
@@ -24,5 +24,5 @@ class Teacher implements TeacherInterface {
 
 function createEmployee(salary: number | string): Director | Teacher {
 	if (typeof salary === 'number' && salary < 500) return new (Teacher);
-    else return new (Director);
+    return new (Director);
 }
