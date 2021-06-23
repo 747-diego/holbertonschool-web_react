@@ -16,20 +16,31 @@ export class Director implements DirectorInterface {
         return (home); 
     }
 	getCoffeeBreak() { 
-        return ('Getting a coffee break'); 
+        const coffee = 'Getting a coffee break';
+        return (coffee); 
     }
 	workDirectorTasks() { 
-        return ('Getting to director tasks'); 
+        const direct = 'Getting to director tasks';
+        return (direct);
     }
 }
 
 export class Teacher implements TeacherInterface {
-	workFromHome() { return 'Cannot work from home'; }
-	getCoffeeBreak() { return 'Cannot have a break'; }
-	workTeacherTasks() { return 'Getting to work'; }
+	workFromHome() { 
+        const home = 'Cannot work from home';
+        return (home);
+    }
+	getCoffeeBreak() { 
+        const coffeBreak = 'Cannot have a break';
+        return (coffeBreak);
+    }
+	workTeacherTasks() { 
+        const work = 'Getting to work';
+        return (work);
+    }
 }
 
 export function createEmployee(salary: number | string): Director | Teacher {
-	if (typeof salary === 'number' && salary < 500) return new Teacher();
-	return new Director();
+	if (typeof salary === 'number' && salary < 500) return (new Teacher());
+	return (new Director());
 }
