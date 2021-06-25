@@ -4,7 +4,11 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 
 module.exports = {
-  entry: './js/dashboard_main.js',
+  entry: {
+    'header': "./modules/header/header.js",
+    'body': "./modules/body/body.js",
+    'footer': "./modules/footer/footer.js",
+  },
   mode: 'production',
   devServer: {
     contentBase: path.join(__dirname, './public'),
