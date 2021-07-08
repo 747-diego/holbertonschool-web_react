@@ -14,3 +14,8 @@ export const getFooterCopy = (isIndex) => {
     return (dash);
   }
 };
+
+export const getLatestNotification = () => {
+  const urgentMessage = '<strong>Urgent requirement</strong> - complete by EOD';
+  return (urgentMessage);
+};
