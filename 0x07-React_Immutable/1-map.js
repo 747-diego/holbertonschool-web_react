@@ -1,5 +1,4 @@
-import { Map } from 'immutable';
-import { fromJS } from 'immutable';
+import { Map, fromJS } from 'immutable';
 
 function getImmutableObject(object) {
   return (Map(object));
