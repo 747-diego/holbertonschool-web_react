@@ -1,5 +1,6 @@
-import { Map } from 'immutable';
+import { immutable } from 'immutable';
 
+const { Map, set } = immutable;
 const map = Map({
   1: 'Liam',
   2: 'Noah',
